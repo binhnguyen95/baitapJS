@@ -6,12 +6,10 @@
 </head>
 <body>
 <script>
-    diemly = prompt("Vật lý")
-    let lyINT = number(diemly)
-    diemhoa = prompt("Hóa học")
-    let hoaINT = number(diemhoa)
-    diemsinh = prompt("Sinh học")
-    let sinhINT = number(diemsinh)
+    diemly = parseInt(prompt("Vật lý"))
+    diemhoa = parseInt(prompt("Hóa học"))
+    diemsinh = parseInt(prompt("Sinh học"))
+
 
     let tb = diemly + diemhoa + diemsinh
     document.write("Điểm trung bình: " + tb/3)
