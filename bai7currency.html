@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="text" id="day">
+
+<select name="" id="so1">
+    <option value="23000">VIET NAM</option>
+    <option value="1">USD</option>
+</select>
+
+<select name="" id="so2">
+    <option value="23000">VIET NAM</option>
+    <option value="1">USD</option>
+</select>
+
+<button onclick="tinh()">Tính</button>
+<br>
+
+<script>
+    function tinh() {
+        let day = document.getElementById("day").value
+        let so1 = document.getElementById("so1").value;
+        let so2 = document.getElementById("so2").value;
+        let ketqua = so1/so2
+        let so = day/ketqua
+        alert (so)
+        // alert(ketqua)
+    }
+</script>
+
+</body>
+</html>
