@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <td>
+            <input type="number" id="num1">
+            <input type="number" id="num2">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+            <input type="button" onclick="cong()" value="Cộng +">
+            <input type="button" onclick="tru()" value="Trừ -">
+            <input type="button" onclick="nhan()" value="Nhân *">
+            <input type="button" onclick="chia()" value="Chia /">
+            </td>
+        </tr>
+    </table>
+
+    <h2>Kết quả:</h2> <br>
+    <q id="kq"></q>
+</form>
+</body>
+</html>
+
+<script>
+    function cong() {
+        let so1 = document.getElementById("num1").value;
+        let so2 = document.getElementById("num2").value;
+        let ketqua = parseInt(so1) + parseInt(so2)
+        document.getElementById("kq").innerText = ketqua;
+    }
+
+    function tru() {
+        let so1 = document.getElementById("num1").value;
+        let so2 = document.getElementById("num2").value;
+        let ketqua = parseInt(so1) - parseInt(so2)
+        document.getElementById("kq").innerText = ketqua
+    }
+
+    function nhan() {
+        let so1 = document.getElementById("num1").value;
+        let so2 = document.getElementById("num2").value;
+        let ketqua = parseInt(so1) * parseInt(so2)
+        document.getElementById("kq").innerText = ketqua
+    }
+
+    function chia() {
+        let so1 = document.getElementById("num1").value;
+        let so2 = document.getElementById("num2").value;
+        let ketqua = parseInt(so1) / parseInt(so2)
+        document.getElementById("kq").innerText = ketqua
+    }
+
+
+</script>
